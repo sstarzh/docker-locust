@@ -15,7 +15,7 @@ h = {'Host': 'shop.f5se.com', 'User-Agent': 'wontguess'}
 
 
 def login(l):
-    l.client.post("/user/login", {"username":"user_{randuser}", "password":"pass_{randpass}"}, headers=h, verify=False)
+    l.client.post("/login.php", {"username":"user_{randuser}", "password":"pass_{randpass}"}, headers=h, verify=False)
 
 
 def index(l):
